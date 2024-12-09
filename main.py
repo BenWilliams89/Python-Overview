@@ -247,3 +247,43 @@ for ind in range(len(users)):
     users[ind] = users[ind].capitalize()
 
 print(users) = [Anna, Chris, Brian]
+
+""" While loops """
+
+run a block of code indefinetly (if condition is true) - when false the code stops
+
+countdown_number = 10
+
+print("Initiating Countdown Sequence...")
+print("Lift Off Will Commence In...")
+
+while countdown_number >= 0:
+    print(f"{countdown_number} seconds...")
+    countdown_number -= 1  = -= reduces by one
+
+print("And We Have Lift Off!") - countsdown to 0
+
+another example:
+
+play_game = True
+
+while play_game:
+    continue_playing = input("Would you like to continue playing the game? y/n ")
+    
+    if continue_playing.lower() == "y":
+        print("You have decided to continue playing the game.")
+    elif continue_playing.lower() == "n":
+        print("Now closing the game...")
+        play_game = False
+    else:
+        print("That is not a valid option. Please try again.")
+
+print("Thanks for playing")
+
+an example of counting up:
+
+num = -1
+
+while num <= 8 and num >= -2:
+    num += 1
+    print(num)
