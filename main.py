@@ -239,3 +239,11 @@ print(foods)
 # In this case we need to calculate the length of the foods collection
 # Then we generate a range of integers equal to that length
 # Then we iterate over that range of integers
+
+another example:
+
+users = ['anna', 'chris', 'brian']
+for ind in range(len(users)):
+    users[ind] = users[ind].capitalize()
+
+print(users) = [Anna, Chris, Brian]
