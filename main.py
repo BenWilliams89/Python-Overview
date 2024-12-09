@@ -155,4 +155,29 @@ not in is the oppositite
 
 print('Program' in 'Programming') = true
 print('spam' in ['spam', 'egg']) = true
-print('sausage' not in ['spam', 'egg']) = true
+print('sausage' not in ['spam', 'egg']) = 
+
+""" If & Else statements """
+
+if number == 5: - uses : to run
+    print(f"{number} is equal to 5")
+else:
+    print(f"{number} is not equal to 5")
+
+    this can also be written as:
+    a if c else b 
+        = if a & c are equal otherwise do b
+
+""" Buzz Fizz Game"""
+num = 15
+
+if num % 3 == 0 and num % 5 == 0:
+    print('FizzBuzz')
+elif num % 3 == 0:
+    print('Fizz')
+elif num % 5 == 0:
+    print('Buzz')
+else:
+    print(num)
+
+    
