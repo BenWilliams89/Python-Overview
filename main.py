@@ -28,3 +28,50 @@ print(type(egg,bacon,spam)) prints tuple
 print(type({name : john, age : 80})) prints dict
 
 print(isinstance(3.14, int)) = False = as 3.14 is not a integar it is a float
+
+""" integers, floats and decimals """
+
+integer = a whole number (3)
+float = a number with a decimal (2.76)
+
+int() float() complex()
+
+None = 0
+
+When receiving information like from a form on a website, the information comes through as a string
+We use int() to convert it to a number
+float() to convert it to a float
+
+or to convert a int/float into a string we use str()
+
+int()	Converts to an integer
+float()	Converts to a floating-point number
+hex()	Converts a number to a hexadecimal string
+oct()	Converts a number to a octal string
+tuple()	Converts to a tuple
+set()	Converts to a set
+list()	Converts to a list
+dict()	Converts a tuple into a dictionary
+str()	Converts a number into a string
+
+first_number = input("input your first number") - 2
+second_number = input("input your second number") -2 
+print(first_number + second_number) = 22 as the input is a string
++ is concatination
+
+to change the above to numbers we do:
+
+first_number = int(input("input your first number")) - 2
+second_number = int(input("input your second number")) - 2
+print(first_number + second_number) = 4
+
+my_number = str(5)
+my_string "5"
+
+print(my_string + my_number) = 55
+
+result = 40 + float('2.2)
+print (result) = 42.2
+
+result_two = "hello + str(42)
+print(result_two) = hello 42
