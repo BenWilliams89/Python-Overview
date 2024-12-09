@@ -180,4 +180,36 @@ elif num % 5 == 0:
 else:
     print(num)
 
-    
+another example:
+
+if number > 5:
+    print(f"{number} is greater than 5")
+elif number < 5:
+    print(f"{number} is less than 5")
+else:
+    print(f"{number} is not greater than, or less than 5. Therefore, {number} must be equal to 5.")
+
+another example:
+
+day = 'Friday'
+
+if day == 'Monday':
+    print('Meeting at 9:00')
+elif day == 'Wednesday':
+    print('Meeting at 2:00')
+elif day == 'Friday':
+    print('Meeting at 4:00')
+else:
+    print('No meetings today')
+
+""" Nested if Else statements """
+admin = True
+update_required = True
+
+if admin:
+    if update_required:
+        print("You are authorized to update")
+    else:
+        print("No update required")
+else:
+    print("You need admin privileges to do this")
