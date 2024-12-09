@@ -17,9 +17,9 @@ print(result1)
 
 numbers, boolean, set, sequence types & Dictionary (data mapping)
 """
-print(type('hello)) """ prints class 'str' """ for string
+""" print(type('hello)) """ prints class 'str' """ for string
 
-print(type(42)) """ prints class int - number'
+""" print(type(42)) """ prints class int - number'
 
 Print (type(3.145)) = float - number with decimals
 print (type(1j)) prints complex - mix of objects
@@ -202,7 +202,8 @@ elif day == 'Friday':
 else:
     print('No meetings today')
 
-""" Nested if Else statements """
+""" Nested If & Else statement """
+
 admin = True
 update_required = True
 
@@ -213,3 +214,28 @@ if admin:
         print("No update required")
 else:
     print("You need admin privileges to do this")
+
+""" For loops """
+
+languages = ["HTML", "CSS", "JavaScript"]
+for language in languages:
+  print(language) = HTML, CSS & JavaScript are printed to the console
+
+  for character in "python"
+  print(character) = p y t h o n
+
+  range() loops through a specific number of times
+  range() - takes 3 agruments - start, stop, step
+
+  len() - length
+
+ 
+  foods = ['bacon', 'sausage', 'egg', 'spam']
+
+for ind in range(len(foods)):
+	# In this example only the index is iterated over not the value
+    print(ind, foods[ind])
+print(foods)
+# In this case we need to calculate the length of the foods collection
+# Then we generate a range of integers equal to that length
+# Then we iterate over that range of integers
