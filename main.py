@@ -75,3 +75,17 @@ print (result) = 42.2
 
 result_two = "hello + str(42)
 print(result_two) = hello 42
+
+""" in python division always returns a float""" decimal number - whatever the answe is
+
+5**5 = the power of 5 = 5 * 5 * 5 * 5 * 5
+
+modulo % = divides the first number by the second number and returns the remainder
+eg 5 / 5 = 1 but 5 % 5 = 0 as there is no remainder
+
+""" Python f-string function """
+f'{string or expression}'
+
+name = input('what is your name") - string
+age = input('what is your age) - number
+print (f'hello {name}, you are {age} years old) = adding f means we can print strings and numbers without needing to change them
