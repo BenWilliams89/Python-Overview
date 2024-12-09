@@ -133,3 +133,26 @@ translate()	Returns a translated string
 upper()	Converts a string into uppercase
 zfill()	Fills the string with a specified number of 0 values at the beginning
 
+""" Comparision Operaters """
+
+== is equal too
+> is greater than
+< is less than
+>= is greater then or equal to
+<= is less than or greater to
+!= is not equal to
+
+true and true = true
+true and false = false
+true or flase = if any statement is true then true is returned with and = true
+print(not(4 < 5 and 4 < 10)) = false as not is used
+
+""" The In keyword"""
+
+The in keyword is the same as includes 
+in returns true or false
+not in is the oppositite
+
+print('Program' in 'Programming') = true
+print('spam' in ['spam', 'egg']) = true
+print('sausage' not in ['spam', 'egg']) = true
