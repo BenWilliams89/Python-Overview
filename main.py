@@ -717,3 +717,51 @@ print(unsold_items)
 
 """ Iterating Python Data Structures """
 
+If we needed access to both keys and values, we’d have to use a dictionary method called .items()
+
+user = {
+    "username": "tombombadil",
+    "first_name": "Tom",
+    "last_name": "Bombadil",
+    "age": 100
+}
+
+for key, value in user.items():
+    print(f"Key: {key}")
+    print(f"Value: {value}")
+    print("------------------")
+
+    prints = key: username, value: tombombadil, ---
+
+    Example:
+
+    data = {
+	"first_name": "brian",
+	"last_name": "johnson",
+	"occupation": "student"
+}
+
+for key, value in data.items():
+    print(f"{key}:{value}") - This prints each key and value
+
+for key, value in data.items():
+    if value != 'student':
+        data[key] = value.capitalize()
+print(data)
+
+this runs an if statement saying that update the strings that don't equal student to capitalise
+
+example:
+
+scores = [6, 9, 8, 7, 8, 9]
+
+for ind in range(len(scores)):
+	scores[ind] += 1
+
+print(scores)
+
+range(len(scores)) generates a sequence of indices from 0 to the length of the list minus one.
+
+scores[i] += 1 increments the value at each index by 1.
+
+""" List Comprehensions"""
