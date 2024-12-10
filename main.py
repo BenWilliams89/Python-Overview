@@ -519,3 +519,31 @@ crew.sort(key=len, reverse=True) = sort by length of the string and reverse it a
 print(crew)
 
 """ Tuples """
+
+tupes are not changeable - a collection of items similar to a list but collects data
+creating a tuple is refered to as packing
+a string with a comma after = a singleton tuple - ie "hello",
+
+empty = ()
+singleton = 'hello',
+tup = 12345, 54321, 'hello!' # packing two ints and a string in a tuple
+print(empty) = ()
+print(singleton) = hello
+print(tup)
+print(tup[1])
+x, y, z = tup # unpacking tuple into variables
+print(z)
+
+
+Example
+
+cars = "Tesla", 'BMW', 'Ferrari',
+print(cars)
+get_car = cars[1]
+print(get_car) = BMW
+car_one, car_two, car_three = cars
+print(cars[0])
+print(cars[1])
+print(cars[2])
+
+"""Dictionaries"""
