@@ -344,3 +344,25 @@ while x < 14:
 
 """ Nested Iteration """
 
+i = 2
+while i < 10:
+    j = 2
+    while j <= i/j:
+        if not i % j:
+            break
+        j += 1
+    if j > i/j:
+        print(f'{i} is a prime number')
+    i += 1
+
+    prints to the console = 2,3,5,7 is a prime number
+
+    Another example:
+
+    x = 0
+while x <= 3:
+    y = 200
+    while y <= 203:
+        print(x, y)
+        y += 1
+    x += 1
