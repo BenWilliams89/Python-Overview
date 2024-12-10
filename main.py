@@ -287,3 +287,60 @@ num = -1
 while num <= 8 and num >= -2:
     num += 1
     print(num)
+
+""" Break, Continue & Pass """
+
+Break stops the code from executing:
+
+for number in range(10):
+    if number == 5:
+        break    # break here
+
+    print(f'Number is  {number}')
+
+print('Left the loop')
+
+continue skips ahead:
+
+for number in range(10):
+    if number == 5:
+        continue    # continue here
+
+    print(f'Number is  {number}')
+
+print('Left the loop')
+
+
+Pass is diregarded - more of a placeholder
+
+for number in range(10):
+    if number == 5:
+        pass    # pass here
+
+    print(f'Number is  {number}')
+
+print('Left the loop')
+
+Example of +1 and break:
+
+x = 0
+while x < 10:
+    if x == 8:
+        break
+    print(x)
+    x += 1
+
+print(f"Loop exited with x={x}")
+
+example of pass and +1:
+
+x = 0
+while x < 14:
+    if x > 4 and x < 11:
+        pass
+    else:
+        print(x)
+    x += 1
+
+""" Nested Iteration """
+
