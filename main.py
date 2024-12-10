@@ -406,3 +406,66 @@ for number in all_numbers:
 
 print(all_numbers)
 print(big_numbers)
+
+""" List Indexing"""
+
+take an item from a list - known as elements
+last item in the list has the index -1 - lists start at 0 index
+mylist[-2] = takes the second to last item etc
+
+
+example:
+
+fruits = ["apple", "banana", "peach", "pear", "plum", "orange"]
+# As lists are zero-indexed index 0 is the first element
+print(fruits[0])
+# Using an index of -1 gives the last element. Negative indexing counts from the right
+print(fruits[-1])
+print(fruits[2])
+
+this prints apple, orange and peach
+
+""" List slicing """
+
+slice the list up
+slice(2) - takes the first two items in a list
+slice has 3 arguments = start, end & step
+
+fruits = ["apple", "banana", "peach", "pear", "plum", "orange"]
+x = slice(1, 4, 2) - 1 = start, 4 = stop, 2 = step (take the 2nd element between 1 and 4)
+fruits[x]
+
+this produces banana and pear - because 1 is the start (banana), it stops at plum(4) then takes the 2 element between them = (pear)
+
+"""List notation"""
+
+slice shorthand = [0:2] = 0 is start, 2 is stop
+this takes everything up until the second element but does NOT include the second element
+
+example of a slice with 2 arguments:
+
+fruits = ["apple", "banana", "peach", "pear", "plum", "orange"]
+print(fruits[0:2])
+
+This prints apple and banana
+
+example of a slice with 3 arguments:
+
+fruits = ["apple", "banana", "peach", "pear", "plum", "orange"]
+print(fruits[0:4:2])
+
+This prints apple and peach
+
+Another example:
+
+names = ["Mark", "Betty", "John", "Sally", "Bill", "Steven", "Mary", "Emily", "Adam"]
+
+
+name = names[2]
+print(name) = John
+
+two_names = names[2:4]
+print(two_names) = John & Sally
+
+other_names = names[1:6:2]
+print(other_names) = Betty, Sally, Steven start at betty end at mary take the 2nd from between
