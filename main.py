@@ -668,3 +668,52 @@ print(challenger)
 
 """ Sets """
 
+python data type - mathmatical concept of items with no duplicates - good way to forbit duplicates
+use case to to return unique words in a document
+You can't change items in a set
+add single items by using add() - multiple items with update() & discard() removes an item
+
+breakfast = {'bacon', 'egg', 'spam', 'spam', 'spam', 'spam', 'spam'}
+print(breakfast)
+print('egg' in breakfast)
+breakfast.add('sausage')
+print(breakfast)
+breakfast.update(['Lobster Thermidor', 'truffle pate', 'crevettes', 'shallots','aubergines'])
+print(breakfast)
+breakfast.discard('aubergines')
+print(breakfast)
+
+Sets have mathematic operations - union, intersection, difference and symmetric difference
+union = all values that are one = | symbol
+intersection = values in both sets = & symbol
+differnece = value in first set and not the second set = - symbol
+symmetric difference = all values in one set but not both = ^ symbol
+
+Example:
+
+hello = set("Hello")
+world = set("World")
+print(f"The unique letters in hello are: {hello}") = h , e, l, o
+print(f"The letters in hello or world or both are: {hello|world}") = | is the symbol for union = h, d, l, w, r, e, o
+print(f"The letters in both hello and world are: {hello&world}") = & is the symbol for intersection = l, o
+print(f"The letters in hello but not world are: {hello-world}") = - is the symbol for difference = e, h
+print(f"The letters in hello and world but not both are: {hello^world}") = ^ is the symbol for symmetric difference = r, e, h, d, w
+
+Example:
+
+product_list = ['hammer', 'saw', 'nails', 'wood', 'screws', 'paint', 'brushes', 'light bulbs']
+products_bought = {'nails', 'screws', 'hammer', 'wood', 'saw', 'hammer', 'saw', 'nails', 'nails', 'screws', 'hammer'}
+
+products_bought.add('light bulbs')
+products_bought.update(['wood', 'screws', 'saw'])
+
+has_nails = 'nails' in products_bought
+has_paint = "paint" in products_bought
+unsold_items = set(product_list) - products_bought   = Set converts to a set from a list
+
+print(has_nails)
+print(has_paint)
+print(unsold_items)
+
+""" Iterating Python Data Structures """
+
