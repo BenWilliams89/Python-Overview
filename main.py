@@ -469,3 +469,53 @@ print(two_names) = John & Sally
 
 other_names = names[1:6:2]
 print(other_names) = Betty, Sally, Steven start at betty end at mary take the 2nd from between
+
+""" List Methods"""
+
+
+Method	Description
+list.append(x)	Add an item to the end of the list.
+list.extend(list)	Extend the list by appending another list.
+list.insert(i, x)	Insert an item at a given position. The first argument is the index of the element before which to insert
+list.remove(x)	Remove the first item from the list whose value is equal to x. It raises a ValueError if there is no such item.
+list.pop(i)	Remove the item at the given position in the list, and return it. If no index is specified, a.pop() removes and returns the last item in the list.
+list.clear()	Remove all items from the list.
+list.index(x, start, end)	Return zero-based index in the list of the first item whose value is equal to x. Raises a ValueError if there is no such item.The optional arguments start and end are interpreted as in the slice notation.
+list.count(x)	Return the number of times x appears in the list.
+list.sort(key=None, reverse=False)	Sort the items of the list in place
+list.reverse()	Reverse the elements of the list in place.
+list.copy()	Return a copy of the list. Equivalent to a[:].
+
+Note that methods which alter the list (reverse, append and sort) return None when printed. print(menu.reverse()) prints none - print menu again to get result
+Methods that do not return any value return None as default in Python. 
+Other methods like count, index and pop return integers, indices and items respectively
+
+example:
+
+menu = ['eggs', 'bacon', 'spam', 'spam']
+print(menu) = displays all
+print(menu.count('spam')) = 2 as spam appears twice
+print(menu.count('eggs')) = 1
+print(menu.index('eggs')) = 0 as eggs is the first index
+print(menu.reverse()) = none as reverse produces none
+print(menu) = the menu in reverse
+print(menu.append('lobster thermidor')) = produces none - same as reverse
+print(menu) = adds these to the list and prints the whole list
+print(menu.sort()) - produces none
+print(menu) = prints menu in alphabetical order
+print(menu.pop()) = prints spam as that is the last item on the list
+
+Example:
+
+crew = ["Jean-Luc", "Wesley", "Warf", "Deanna", "William", "Data", "Geordie", "Tasha"]
+print(crew) = prints all names
+crew.pop()
+print(crew) = prints all expect Tasha
+crew.append("Beverly")
+print(crew) = adds Beverly to the end
+crew.extend(["Miles", "Guinan"])
+print(crew) = adds the two names above to the list
+crew.sort(key=len, reverse=True) = sort by length of the string and reverse it as reverse is true
+print(crew)
+
+""" Tuples """
