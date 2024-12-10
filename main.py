@@ -547,3 +547,30 @@ print(cars[1])
 print(cars[2])
 
 """Dictionaries"""
+
+a way to store data
+key: value pairs - like methods in JS
+
+example of using a sictionary are mapping a phone number to a name
+
+user = {
+    "username": "tombombadil",
+    "first_name": "Tom",
+    "last_name": "Bombadil",
+    "age": 100
+}
+
+print(user)
+print(user['age'])
+user['home'] = 'Withywindle, Middle-Earth'
+user['age'] = 99
+print(user)
+del user['home'] 
+print(user)
+print(list(user)) - prints username, first&lastname and age
+print(sorted(user)) = sorts
+print(user)
+print('username' in user) = True
+
+""" Getting & Setting Dictionary Items"""
+
