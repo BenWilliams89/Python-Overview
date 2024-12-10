@@ -617,3 +617,54 @@ print(data) prints all including age
 
 """ Dictionary Methods """
 
+clear()	Removes all the elements from the dictionary
+copy()	Returns a copy of the dictionary
+fromkeys()	Returns a new dictionary with the specified keys and value
+get(keyname, value)	Returns the value of the specified keyname. Used in the previous unit. Returns default None if the keyname doesn't exist unless you override this default with a optional value.
+items()	Returns a list containing a tuple for each key:value pair
+keys()	Returns a list containing the dictionary's keys. Used in the previous unit.
+pop()	Removes the element with the specified key
+popitem()	Removes the last inserted key:value pair
+setdefault()	Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
+update()	Updates the dictionary with the specified key:value pairs
+values()	Returns a list of all the values in the dictionary. Used in the previous unit.
+
+user = {
+    "username": "tombombadil",
+    "first_name": "Tom",
+    "last_name": "Bombadil",
+    "age": 100
+}
+
+print(user)
+print(user.items())
+print(user.get('age', 0))
+user.update({'home': 'Withywindle, Middle-Earth'})
+print(user)
+print(user.popitem())
+print(user)
+user.clear()
+print(user)
+
+Another Example:
+
+challenger = {
+	"name": "Katniss Everdeen",
+	"age": 16,
+	"district": 12,
+	"weapon": "Bow and Arrow", 
+	"status": "Victor"
+}
+
+challenger.update({'occupation': 'Hunter'}) - adds hunter as an occupation
+
+occupation = challenger.get('occupation')
+print(occupation)
+
+challenger.update({'age':17,}) - changes age to 17
+
+challenger.pop('status') - removes status
+print(challenger)
+
+""" Sets """
+
