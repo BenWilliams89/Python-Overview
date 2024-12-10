@@ -574,3 +574,46 @@ print('username' in user) = True
 
 """ Getting & Setting Dictionary Items"""
 
+dict() - creates dictionsaries from lists
+
+keys = ['username', 'first_name', 'last_name', 'age']
+default_value = ''
+user = dict.fromkeys(keys, default_value)
+print(user)
+user['username'] = 'tombombadil'
+user['first_name'] = 'Tom'
+user['last_name'] = 'Bombadil'
+user['age'] = 100
+print(user)
+print(user['age'])
+print(user.get('home', "doesn't exist"))     - The .get stops an error if key is not set and sets status to 'deoesn't exist'
+user['home'] = 'Withywindle, Middle-Earth'
+user['age'] = 99
+print(user)
+del user['home'] 
+print(user)
+print(list(user.keys()))
+print(list(user.values()))
+print(user)
+
+Example:
+
+data = {
+    "first_name": "Arthur",
+    "last_name": "Dent",
+    "species": "Human"
+}
+
+name = data['first_name']
+print(name) = Arthur
+
+species = data['species']
+print(species) = Human
+
+print(data.get('age', "Doesn't exist")) - creates age without throwing an error
+data['age'] = 42 - sets age value to 42
+
+print(data) prints all including age
+
+""" Dictionary Methods """
+
