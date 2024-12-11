@@ -799,3 +799,62 @@ card: card.upper() creates a key-value pair where the key is the original card a
 
 """ Nested Data Structures """
 
+matrix = [
+    [11, 12, 13, 14],
+    [15, 16, 17, 18],
+    [19, 20, 21, 22],
+]
+
+print([[row[i] for row in matrix] for i in range(4)])
+
+this takes the items in a line = 11, 15, 19 - 12, 16, 20 etc
+
+The code [row[i] for row in matrix] for i in range(4) does exactly this:
+
+for i in range(4): This means "do this 4 times," once for each column.
+
+[row[i] for row in matrix]: This means "take the i-th block from each row" and make a new list.
+
+Another example:
+
+payroll = {'emp1': {'name': 'Precious', 'job': 'Mgr', 'Wage': 50000},
+     'emp2': {'name': 'Kim', 'job': 'Dev', 'Wage': 60000},
+     'emp3': {'name': 'Sam', 'job': 'Dev', 'Wage': 70000}}
+
+print(payroll) = prints the above
+
+print(payroll['emp1']['name']).  = prints precious
+print(payroll['emp1'].get('salary')) = none - no salary defined
+print(payroll['emp1'].get('Wage'))   = 50,000
+payroll['emp4'] = {'name': 'Max', 'job': 'Admin', 'Wage': 30000}
+print(payroll)
+del payroll['emp3'].  = deletes Sam
+
+for id, info in payroll.items():
+    print(f'\nEmployee ID: {id}')
+    for key in info:
+        print(f'{key} : {info[key]}')
+
+        this prints for each person
+
+        Emplyee ID: emp1
+        name: precious
+        job: mgr
+        wage: 50000
+
+Another example: - this is a list with two dictionarys nested inside
+
+student_data = [
+    {
+        'name': 'John Smith',
+        'email': 'john@gmail.com',
+        'subjects': ['Math', 'Psychology', 'Physics', 'Chemistry', 'Biology']
+    },
+    {
+        'name': 'Mary Jones',
+        'email': 'mary@gmail.com',
+        'subjects': ['Fine Art', 'Music', 'Biology', 'Geography', 'Politics']
+    }]
+print(student_data)
+
+""" Variable Naming Conventions """
