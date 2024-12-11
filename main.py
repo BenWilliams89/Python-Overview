@@ -777,5 +777,25 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 evens = [number for number in numbers if number % 2 == 0]
 print(evens) = [2,4,6,8,10]
 
+""" Dictionary comprehensions"""
 
+A concise way to create a dictionary
+
+example:
+
+fruits = ['apple', 'mango', 'banana','cherry']
+print({f:len(f) for f in fruits})
+
+another example:
+
+cards = ['king', 'queen', 'jack', 'ace']
+
+cards_dict = {card: card.upper() for card in cards}
+print(cards_dict)
+
+This comprehension iterates over each element card in the cards list.
+
+card: card.upper() creates a key-value pair where the key is the original card and the value is card.upper(), converting the key to uppercase.
+
+""" Nested Data Structures """
 
