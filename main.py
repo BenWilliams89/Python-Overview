@@ -880,3 +880,36 @@ print(f"This weeks winning lottery numbers are {lottery_generator()}")
 
 """ Defining functions"""
 
+def tells computer we are creating a function
+
+example:
+
+def print_message():
+    print("Hello World!")
+
+print_message()
+
+There is another type of function in python known as a "lambda" = anonymous
+
+add = lambda a, b : a + b
+print(add(5, 12)) 
+
+this prints 17
+
+example of calling an input to add my name and age, then returning it back to me:
+
+# 2. This function runs for the name and age function calls
+def get_user_input(prompt):
+    return input(prompt)
+
+# 4. This function runs twice
+def print_out_to_console(value_to_be_printed):
+    print(value_to_be_printed)
+
+# 1. name and age are the first two function calls to run sequentially
+name = get_user_input("Input your name:")
+age = get_user_input("Input your age:")
+
+# 3. Then function calls run sequentially
+print_out_to_console(f"Your name is {name}")
+print_out_to_console(f"You are {age} years old")
