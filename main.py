@@ -1,10 +1,11 @@
-""" this comments out any code
-"""
-"""variables"""
-my_number = 5
+# this comments out any code
+
+""" Varibales """
+
+""" my_number = 5
 print(my_number)
 
-"""" function """
+""" Functions """
 
 def multiplication(num1, num2):
     return num1 * num2
@@ -15,11 +16,11 @@ print(result1)
 
 """ Determining data types """
 
-numbers, boolean, set, sequence types & Dictionary (data mapping)
-"""
-""" print(type('hello)) """ prints class 'str' """ for string
+"""numbers, boolean, set, sequence types & Dictionary (data mapping)
 
-""" print(type(42)) """ prints class int - number'
+ print(type('hello))  prints class 'str' """ for string """
+
+print(type(42))  prints class int - number'
 
 Print (type(3.145)) = float - number with decimals
 print (type(1j)) prints complex - mix of objects
@@ -42,7 +43,7 @@ When receiving information like from a form on a website, the information comes 
 We use int() to convert it to a number
 float() to convert it to a float
 
-or to convert a int/float into a string we use str()
+- To convert a int/float into a string we use str()
 
 int()	Converts to an integer
 float()	Converts to a floating-point number
@@ -59,7 +60,7 @@ second_number = input("input your second number") -2
 print(first_number + second_number) = 22 as the input is a string
 + is concatination
 
-to change the above to numbers we do:
+- To change the above to numbers we do:
 
 first_number = int(input("input your first number")) - 2
 second_number = int(input("input your second number")) - 2
@@ -180,7 +181,7 @@ elif num % 5 == 0:
 else:
     print(num)
 
-another example:
+- Another example:
 
 if number > 5:
     print(f"{number} is greater than 5")
@@ -189,7 +190,7 @@ elif number < 5:
 else:
     print(f"{number} is not greater than, or less than 5. Therefore, {number} must be equal to 5.")
 
-another example:
+- Another example:
 
 day = 'Friday'
 
@@ -240,7 +241,7 @@ print(foods)
 # Then we generate a range of integers equal to that length
 # Then we iterate over that range of integers
 
-another example:
+- Another example:
 
 users = ['anna', 'chris', 'brian']
 for ind in range(len(users)):
@@ -263,7 +264,7 @@ while countdown_number >= 0:
 
 print("And We Have Lift Off!") - countsdown to 0
 
-another example:
+- Another example:
 
 play_game = True
 
@@ -280,7 +281,7 @@ while play_game:
 
 print("Thanks for playing")
 
-an example of counting up:
+- Example of counting up:
 
 num = -1
 
@@ -290,7 +291,7 @@ while num <= 8 and num >= -2:
 
 """ Break, Continue & Pass """
 
-Break stops the code from executing:
+- Break stops the code from executing:
 
 for number in range(10):
     if number == 5:
@@ -300,7 +301,7 @@ for number in range(10):
 
 print('Left the loop')
 
-continue skips ahead:
+- continue skips ahead:
 
 for number in range(10):
     if number == 5:
@@ -321,7 +322,7 @@ for number in range(10):
 
 print('Left the loop')
 
-Example of +1 and break:
+- Example of +1 and break:
 
 x = 0
 while x < 10:
@@ -332,7 +333,7 @@ while x < 10:
 
 print(f"Loop exited with x={x}")
 
-example of pass and +1:
+- Example of pass and +1:
 
 x = 0
 while x < 14:
@@ -357,10 +358,10 @@ while i < 10:
 
     prints to the console = 2,3,5,7 is a prime number
 
-    Another example:
+- Another example:
 
     x = 0
-while x <= 3:
+    while x <= 3:
     y = 200
     while y <= 203:
         print(x, y)
@@ -396,7 +397,7 @@ print(fruits)
 fruits.sort()
 print(fruits)
 
-example of pulling data from a list:
+- Example of pulling data from a list:
 
 all_numbers = [1, 5, 44, 22, 13, 17, 56, 3, 88, 9, 97]
 big_numbers = []
@@ -414,7 +415,7 @@ last item in the list has the index -1 - lists start at 0 index
 mylist[-2] = takes the second to last item etc
 
 
-example:
+- Example:
 
 fruits = ["apple", "banana", "peach", "pear", "plum", "orange"]
 # As lists are zero-indexed index 0 is the first element
@@ -442,21 +443,21 @@ this produces banana and pear - because 1 is the start (banana), it stops at plu
 slice shorthand = [0:2] = 0 is start, 2 is stop
 this takes everything up until the second element but does NOT include the second element
 
-example of a slice with 2 arguments:
+- Example of a slice with 2 arguments:
 
 fruits = ["apple", "banana", "peach", "pear", "plum", "orange"]
 print(fruits[0:2])
 
 This prints apple and banana
 
-example of a slice with 3 arguments:
+- Example of a slice with 3 arguments:
 
 fruits = ["apple", "banana", "peach", "pear", "plum", "orange"]
 print(fruits[0:4:2])
 
 This prints apple and peach
 
-Another example:
+- Another example:
 
 names = ["Mark", "Betty", "John", "Sally", "Bill", "Steven", "Mary", "Emily", "Adam"]
 
@@ -472,8 +473,6 @@ print(other_names) = Betty, Sally, Steven start at betty end at mary take the 2n
 
 """ List Methods"""
 
-
-Method	Description
 list.append(x)	Add an item to the end of the list.
 list.extend(list)	Extend the list by appending another list.
 list.insert(i, x)	Insert an item at a given position. The first argument is the index of the element before which to insert
@@ -490,7 +489,7 @@ Note that methods which alter the list (reverse, append and sort) return None wh
 Methods that do not return any value return None as default in Python. 
 Other methods like count, index and pop return integers, indices and items respectively
 
-example:
+- Example:
 
 menu = ['eggs', 'bacon', 'spam', 'spam']
 print(menu) = displays all
@@ -505,7 +504,7 @@ print(menu.sort()) - produces none
 print(menu) = prints menu in alphabetical order
 print(menu.pop()) = prints spam as that is the last item on the list
 
-Example:
+- Example:
 
 crew = ["Jean-Luc", "Wesley", "Warf", "Deanna", "William", "Data", "Geordie", "Tasha"]
 print(crew) = prints all names
@@ -535,7 +534,7 @@ x, y, z = tup # unpacking tuple into variables
 print(z)
 
 
-Example
+- Example
 
 cars = "Tesla", 'BMW', 'Ferrari',
 print(cars)
@@ -551,7 +550,7 @@ print(cars[2])
 a way to store data
 key: value pairs - like methods in JS
 
-example of using a sictionary are mapping a phone number to a name
+- Example of using a sictionary are mapping a phone number to a name
 
 user = {
     "username": "tombombadil",
@@ -596,7 +595,7 @@ print(list(user.keys()))
 print(list(user.values()))
 print(user)
 
-Example:
+- Example:
 
 data = {
     "first_name": "Arthur",
@@ -646,7 +645,7 @@ print(user)
 user.clear()
 print(user)
 
-Another Example:
+- Another Example:
 
 challenger = {
 	"name": "Katniss Everdeen",
@@ -689,7 +688,7 @@ intersection = values in both sets = & symbol
 differnece = value in first set and not the second set = - symbol
 symmetric difference = all values in one set but not both = ^ symbol
 
-Example:
+- Example:
 
 hello = set("Hello")
 world = set("World")
@@ -699,7 +698,7 @@ print(f"The letters in both hello and world are: {hello&world}") = & is the symb
 print(f"The letters in hello but not world are: {hello-world}") = - is the symbol for difference = e, h
 print(f"The letters in hello and world but not both are: {hello^world}") = ^ is the symbol for symmetric difference = r, e, h, d, w
 
-Example:
+- Example:
 
 product_list = ['hammer', 'saw', 'nails', 'wood', 'screws', 'paint', 'brushes', 'light bulbs']
 products_bought = {'nails', 'screws', 'hammer', 'wood', 'saw', 'hammer', 'saw', 'nails', 'nails', 'screws', 'hammer'}
@@ -733,7 +732,7 @@ for key, value in user.items():
 
     prints = key: username, value: tombombadil, ---
 
-    Example:
+- Example:
 
     data = {
 	"first_name": "brian",
@@ -751,7 +750,7 @@ print(data)
 
 this runs an if statement saying that update the strings that don't equal student to capitalise
 
-example:
+- Example:
 
 scores = [6, 9, 8, 7, 8, 9]
 
@@ -768,7 +767,7 @@ scores[i] += 1 increments the value at each index by 1.
 
 A concise way to create a list
 
-examples of how to create lists:
+- Examples of how to create lists:
 
 letters = [letter for letter in 'Marvin']
 print(letters) = [m,a,r,v,i,n]
@@ -781,12 +780,12 @@ print(evens) = [2,4,6,8,10]
 
 A concise way to create a dictionary
 
-example:
+- Example:
 
 fruits = ['apple', 'mango', 'banana','cherry']
 print({f:len(f) for f in fruits})
 
-another example:
+- Another example:
 
 cards = ['king', 'queen', 'jack', 'ace']
 
@@ -815,7 +814,7 @@ for i in range(4): This means "do this 4 times," once for each column.
 
 [row[i] for row in matrix]: This means "take the i-th block from each row" and make a new list.
 
-Another example:
+- Another example:
 
 payroll = {'emp1': {'name': 'Precious', 'job': 'Mgr', 'Wage': 50000},
      'emp2': {'name': 'Kim', 'job': 'Dev', 'Wage': 60000},
@@ -842,7 +841,7 @@ for id, info in payroll.items():
         job: mgr
         wage: 50000
 
-Another example: - this is a list with two dictionarys nested inside
+- Another example: - this is a list with two dictionarys nested inside
 
 student_data = [
     {
@@ -882,7 +881,7 @@ print(f"This weeks winning lottery numbers are {lottery_generator()}")
 
 def tells computer we are creating a function
 
-example:
+- Example:
 
 def print_message():
     print("Hello World!")
@@ -896,7 +895,7 @@ print(add(5, 12))
 
 this prints 17
 
-example of calling an input to add my name and age, then returning it back to me:
+- example of calling an input to add my name and age, then returning it back to me:
 
 # 2. This function runs for the name and age function calls
 def get_user_input(prompt):
@@ -914,20 +913,20 @@ age = get_user_input("Input your age:")
 print_out_to_console(f"Your name is {name}")
 print_out_to_console(f"You are {age} years old")
 
-functions can also use optional parameters
+- functions can also use optional parameters
 def print_message(name='World):
     return f'hello {name}
     prints hello world
 
 
-Example:
+- Example:
 
 def three_num(num1, num2, num3):
     sum = num1 + num2 - num3
     print(sum)
 three_num(10,20,10) = 20
 
-another example:
+- Another example:
 
 def add_numbers(nums_tuple, min_value):
     total_sum = sum(num for num in nums_tuple if num >= min_value)
@@ -938,10 +937,10 @@ print(total) = 40 (21+19) as these are the only numbers >= 15
 
 """ Splat! *args * **kwargs"""
 
-Allow to pass many arguments
+- Allow to pass many arguments
 
-*args = can be renamed at a latter time
-**kwards = similar to *args but is used when a i use a keyword or named argument
+- *args = can be renamed at a latter time
+- **kwards = similar to *args but is used when a i use a keyword or named argument
 
 def addition(a, b):
     return a + b
@@ -977,7 +976,7 @@ def concatenate_words(**words):
 
 print(concatenate_words(a='This', b="is", c="a", d="useful", e="feature"))
 
-Another Example:
+- Another Example:
 
 def make_string(*strings):
     return ' '.join(strings)
@@ -990,4 +989,58 @@ def get_age(**data):
 
 pats_age = get_age(name="pat", level=4, age=33, occupation="postman")
 print(pats_age)
+
+""" Scope - local and Gloval variables"""
+
+Built-in scope
+    global scope
+        enclosing scope
+            local scope
+
+- Example of global and local keywords and scope:
+
+can_access = False
+	
+def update_access():
+    age = int(input('Enter your age: '))
+    if age >= 18:
+        # We may think this is updating the global variable can_access, but its not as it is now considered a local variable
+        can_access = True
+        return('You are old enough enter')
+    else:
+        return('You are too young, you may not enter');
+
+update_access()
+
+print(can_access) # will still print out False
+
+- with the use of "global" keyword this example changes:
+
+    can_access = False
+	
+def update_access():
+    global can_access
+    age = int(input('Enter your age: '))
+    if age >= 18:
+        # The global keyword is used
+        can_access = True
+        return('You are old enough to enter')
+    else:
+        return('You are too young, you may not enter');
+
+update_access()
+
+print(can_access) # will now print True if an age >= 18 is entered
+
+- like global we can also use the nonlocal keyword:
+
+def which_scope():
+    my_age = 49 # local variable my_age
+    def inner_scope():
+        nonlocal my_age # No longer an issue because of this
+        my_age += 1
+        print(my_age)
+    inner_scope()
+
+which_scope()
 
