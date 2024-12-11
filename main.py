@@ -1044,3 +1044,70 @@ def which_scope():
 
 which_scope()
 
+""" Passing functions Around"""
+
+def print_arguments( **args ):
+    """Prints the arguments"""
+    print(f'The arguments are {args}')
+
+def pass_function(function_name, **args):
+    """Takes a function as an argument
+    Passes the argument 'l' to the function passed in 
+    """
+    print("This function takes another function as an argument")
+    function_name(f=args['l'])
+
+pass_function(print_arguments, l='spam')
+
+prints =
+this function takes another function as an argument
+the arguments are {'f' : spam}
+
+""" Decorators """
+
+A decorator is a way to add new functionality to a existing function without modifying its structure
+The @ symbol is used to prefix the decorator name.
+
+- An Example:
+
+def define_units(unit):
+    """Define the units"""
+    def decorator_define_units(func):
+        func.unit = unit
+        return func
+    return decorator_define_units
+
+@define_units('m^2')
+def area(length, width):
+   
+   Calculate area of rectangle or parallelogram
+    return length * width
+
+# The unit defined in the decorator can be used with dot notation
+# In this case the function area units can be used as area.unit
+print(f'The area is {area(3,5)}{area.unit}')
+
+prints = the area is 15m^2
+
+- Another Example:
+
+def add_author(func):
+    """
+    Decorator to add string with author information
+    to print after decorated function runs
+    """
+    def wrapper(*args):
+        r = func(*args)
+        return f"{r}\nBy Code Institute"
+    return wrapper
+        
+@add_author
+
+def print_article_title(title):
+    return f"Article Title: {title}"
+result = print_article_title('Python Decorators')
+print(result)
+
+Article title: Python Decorators
+By Code Institute
+
