@@ -913,3 +913,28 @@ age = get_user_input("Input your age:")
 # 3. Then function calls run sequentially
 print_out_to_console(f"Your name is {name}")
 print_out_to_console(f"You are {age} years old")
+
+functions can also use optional parameters
+def print_message(name='World):
+    return f'hello {name}
+    prints hello world
+
+
+Example:
+
+def three_num(num1, num2, num3):
+    sum = num1 + num2 - num3
+    print(sum)
+three_num(10,20,10) = 20
+
+another example:
+
+def add_numbers(nums_tuple, min_value):
+    total_sum = sum(num for num in nums_tuple if num >= min_value)
+    return total_sum
+    
+total = add_numbers((21, 4, 7, 19, 1), 15)
+print(total) = 40 (21+19) as these are the only numbers >= 15
+
+""" Splat! *args * **kwargs"""
+
