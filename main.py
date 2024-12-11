@@ -858,3 +858,25 @@ student_data = [
 print(student_data)
 
 """ Variable Naming Conventions """
+
+A function within a class is known as a method
+
+def divide(num1, num2): = function
+return num/num2
+
+Classes = class names should have he first character capitalised - class ComplexNumber
+
+""" Function Example"""
+
+def lottery_generator():
+       
+    numbers = [] # Empty list to hold the numbers
+    for number in range(0, 10):
+		# randint() generates random integers
+        numbers.append(randint(1, 50))
+    return numbers
+
+print(f"This weeks winning lottery numbers are {lottery_generator()}")
+
+""" Defining functions"""
+
