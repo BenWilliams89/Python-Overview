@@ -765,3 +765,17 @@ range(len(scores)) generates a sequence of indices from 0 to the length of the l
 scores[i] += 1 increments the value at each index by 1.
 
 """ List Comprehensions"""
+
+A concise way to create a list
+
+examples of how to create lists:
+
+letters = [letter for letter in 'Marvin']
+print(letters) = [m,a,r,v,i,n]
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+evens = [number for number in numbers if number % 2 == 0]
+print(evens) = [2,4,6,8,10]
+
+
+
