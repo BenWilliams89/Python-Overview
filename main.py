@@ -1146,3 +1146,24 @@ bullitt = Car('Green', 'Ford', 'Mustang', 'Gasoline')
 
 """ The Self Keyword """
 
+Here is an example that shows how to update the email with self:
+
+class User():
+    """
+    Creates an instance of User
+    """
+    def __init__(self, username, email, subscribed):
+        self.username = username
+        self.email = email
+        self.subscribed = subscribed
+    
+    def description(self):
+        """
+        Describes the instance of User
+        """
+        return f"user: {self.username}, email: {self.email}, subscribed: {self.subscribed}"
+
+user_one = User('arnold','arnold@email.com', True)
+
+print(user_one.email)
+user_one.email = "murphy@email.com"
