@@ -1127,3 +1127,22 @@ print(result)
 
 """ Defining classes in Python"""
 
+- define a class by using the keyword "class" - ie class firstname
+- classes should start with a capital letter
+- a function within a class is known as a method
+- A particular type of method that runs when an instance of the class is created is an initializer.
+- this is known as __int__ = double underscore
+
+- Example:
+
+class Car:
+	def __init__(self, color, make, model, fueltype):
+		self.color = color
+		self.make = make
+		self.model = model
+		self.fueltype = fueltype
+
+bullitt = Car('Green', 'Ford', 'Mustang', 'Gasoline')
+
+""" The Self Keyword """
+
