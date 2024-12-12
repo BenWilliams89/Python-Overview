@@ -1149,21 +1149,46 @@ bullitt = Car('Green', 'Ford', 'Mustang', 'Gasoline')
 Here is an example that shows how to update the email with self:
 
 class User():
-    """
-    Creates an instance of User
-    """
+           
     def __init__(self, username, email, subscribed):
         self.username = username
         self.email = email
         self.subscribed = subscribed
     
     def description(self):
-        """
+        
         Describes the instance of User
-        """
+        
         return f"user: {self.username}, email: {self.email}, subscribed: {self.subscribed}"
 
 user_one = User('arnold','arnold@email.com', True)
 
 print(user_one.email)
 user_one.email = "murphy@email.com"
+
+- Another example:
+
+class ContactInfo:
+    """
+    Creates an instance of ContactInfo
+    """
+    # Class attribute
+    about = "Contact information for customer"
+
+    def __init__(self, name, email):
+        self.name = name
+        self.email = email
+
+    def description(self):
+        return f"{self.name}: {self.email}"
+
+# Print the value for the class attribute named about
+print(ContactInfo.about)
+
+# Declare a variable named contact
+# Create an instance of ContactInfo with the values of "dave" for name and "lister@email.com" for email
+contact = ContactInfo("dave", "lister@email.com")
+
+# Print the description from the contact object
+print(contact.description())
+
